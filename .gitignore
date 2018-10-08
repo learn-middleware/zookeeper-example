@@ -24,3 +24,5 @@ hs_err_pid*
 
 .idea
 *.iml
+.idea
+/zookeeper-example.iml
