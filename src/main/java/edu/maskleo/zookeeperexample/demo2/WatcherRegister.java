@@ -13,8 +13,12 @@ public class WatcherRegister {
             zk = new ZooKeeper(connect, 10000, watcher);
             long sessionId = zk.getSessionId();
             byte[] sessionPwd = zk.getSessionPasswd();
+            System.out.println(zk);
+            Thread.sleep(300);
             zk = null;
             zk = new ZooKeeper(connect, 10000, watcher, sessionId, sessionPwd);
+            System.out.println(zk);
+            Thread.sleep(300);
         } catch (Exception e) {
             e.printStackTrace();
         }
