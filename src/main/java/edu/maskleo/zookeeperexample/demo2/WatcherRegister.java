@@ -18,7 +18,7 @@ public class WatcherRegister {
             zk = null;
             zk = new ZooKeeper(connect, 10000, watcher, sessionId, sessionPwd);
             System.out.println(zk);
-            Thread.sleep(300);
+            Thread.sleep(30000);
         } catch (Exception e) {
             e.printStackTrace();
         }
